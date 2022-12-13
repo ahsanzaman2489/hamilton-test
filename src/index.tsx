@@ -1,19 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Router from './Router';
+
 import reportWebVitals from './reportWebVitals';
-import {RouterProvider} from "react-router-dom";
-import ReactQueryClient from "./Service/ReactQueryClient";
+import App from "./App";
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
 root.render(
     <React.StrictMode>
-        <ReactQueryClient>
-            <RouterProvider router={Router}/>
-        </ReactQueryClient>
+        <App/>
     </React.StrictMode>
 );
 

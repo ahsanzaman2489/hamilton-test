@@ -47,7 +47,7 @@ const Home: FC = () => {
 
         return columnFiltersArray || []
     });
-    const [globalFilter, setGlobalFilter] = useState('');
+
     const [sorting, setSorting] = useState<SortingState>(() => {
         //Setting initial state of sorting filters if available in URl
         let arrayOFOrderBy: any = [];
@@ -90,7 +90,6 @@ const Home: FC = () => {
 
         searchParams.set('limit', `${pagination.pageSize}`); // Setting items limit per page
 
-        if (globalFilter) searchParams.set('nameStartsWith', globalFilter); // Setting global search for name
 
         for (let key in sortingKeysMap) { // Setting Column Search filers
             const indexOfParams = findIndex(columnFilters, (o: any) => {
@@ -114,7 +113,6 @@ const Home: FC = () => {
 
         return searchParams.toString();
     }, [columnFilters,
-        globalFilter,
         pagination.pageIndex,
         pagination.pageSize,
         sorting]); // Setting all search query params for URL to persist the state on load and with new interaction
@@ -123,7 +121,6 @@ const Home: FC = () => {
         useQuery<CharacterListApiResponse>(
             [
                 columnFilters,
-                globalFilter,
                 pagination.pageIndex,
                 pagination.pageSize,
                 sorting,
@@ -131,6 +128,7 @@ const Home: FC = () => {
             async () => {
 
                 const getAllSearchParams = setSearchParams();
+                //Get all search Params to send API
 
                 navigate({
                     pathname: '/',
@@ -138,6 +136,7 @@ const Home: FC = () => {
                 }, {replace: true});
 
                 const url = queryString.exclude('characters?' + getAllSearchParams, ['pageIndex']);
+                //Excluding PageIndex because its no needed in request
                 const response = await API(url);
 
                 return (await response.data) as CharacterListApiResponse;
@@ -204,6 +203,7 @@ const Home: FC = () => {
 
     const handleCharacterClick = (event: React.MouseEvent<HTMLTableRowElement, MouseEvent>, row: any) => {
         navigate(`../details/${row.original.id}`);
+        //Handle row click to show character detail page
     };
 
     return (
@@ -223,19 +223,17 @@ const Home: FC = () => {
                     : undefined
             }
             onColumnFiltersChange={setColumnFilters}
-            onGlobalFilterChange={setGlobalFilter}
             onPaginationChange={setPagination}
             onSortingChange={setSorting}
             rowCount={data?.data?.total ?? 0}
-            enableFullScreenToggle={false}
             enableDensityToggle={false}
+            enableGlobalFilter={false}//disabled because , We dont have global search APi
             muiTableBodyRowProps={({row}) => ({
                 onClick: (e) => handleCharacterClick(e, row),
                 sx: {cursor: 'pointer'}
             })}
             state={{
                 columnFilters,
-                globalFilter,
                 isLoading,
                 pagination,
                 showAlertBanner: isError,

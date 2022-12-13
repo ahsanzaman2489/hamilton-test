@@ -1,3 +1,13 @@
+export type Collections = {
+    name: string;
+    resourceURI: string;
+};
+
+export type Links = {
+    url: string;
+    type: string;
+};
+
 export type Character = {
     id: number;
     name: string;
@@ -5,16 +15,25 @@ export type Character = {
     modified: string;
     series: {
         available: string
+        items: Array<Collections>;
     };
     comics: {
-        available: string
+        available: string;
+        items: Array<Collections>;
     };
     stories: {
-        available: string
+        available: string;
+        items: Array<Collections>;
     };
     events: {
-        available: string
+        available: string;
+        items: Array<Collections>;
     };
+    thumbnail: {
+        path: string;
+        extension: string;
+    }
+    urls: Array<Links>
 }; // single Character schema
 
 export type CharacterListApiResponse = {
