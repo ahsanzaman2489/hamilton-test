@@ -20,6 +20,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * Multi column sort is available you have to hold `SHIFT` key.
 * Fully paginated data visualization
 * Fully responsive Figure 4 and 5
+* All operations O(n) and O(constant)
    
 Figure 1 ![](<public/Screenshot 2022-12-13 183034.jpg>)
 
