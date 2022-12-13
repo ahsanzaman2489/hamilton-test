@@ -18,13 +18,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * Multi column sort is available you have to hold `SHIFT` key.
 * Fully responsive Figure 4 and 5
    
-Figure 1![](<public/Screenshot 2022-12-13 183034.jpg>)
+Figure 1 ![](<public/Screenshot 2022-12-13 183034.jpg>)
 
-Figure 2![](<public/Screenshot 2022-12-13 183118.jpg>)
+Figure 2 ![](<public/Screenshot 2022-12-13 183118.jpg>)
 
-Figure 3![](<public/Screenshot 2022-12-13 183201.jpg>)
+Figure 3 ![](<public/Screenshot 2022-12-13 183201.jpg>)
 
-Figure 4![](<public/Screenshot 2022-12-13 192759.jpg>)
+Figure 4 ![](<public/Screenshot 2022-12-13 192759.jpg>)
 
 Figure 5 ![](<public/Screenshot 2022-12-13 192824.jpg>)
 
@@ -33,6 +33,9 @@ Figure 5 ![](<public/Screenshot 2022-12-13 192824.jpg>)
 * In detail page List of Series , Comics , Stories and Events have limited data to show against character
 * There was no design provided so i focused more on functionality rather then design.
 * No test cases added because of limited time , i can add if i get more time
+* Search is very wierd , case and word sensitive.
+* Images dont have custom sizes they have predefined sizes , full width image can be less then 750px
+* Not much data in the Character API (Eg : images , details)
 
 ## Setup
 * clone the repo `git clone https://github.com/ahsanzaman2489/hamilton-test.git` 
