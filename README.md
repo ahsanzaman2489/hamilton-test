@@ -18,7 +18,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * Multi column sort is available you have to hold `SHIFT` key.
 * Fully responsive Figure 4 and 5
    
-Figure 1![](./public/Screenshot 2022-12-13 183034.jpg)
+Figure 1![](<./public/Screenshot 2022-12-13 183034.jpg>)
 
 Figure 2![](public/Screenshot 2022-12-13 183118.jpg)
 
@@ -26,7 +26,7 @@ Figure 3![](public/Screenshot 2022-12-13 183201.jpg)
 
 Figure 4![](public/Screenshot 2022-12-13 192759.jpg)
 
-Figure 5 ![](public/Screenshot 2022-12-13 192824.jpg)
+Figure 5 ![](<public/Screenshot 2022-12-13 192824.jpg>)
 
 ## Limitations
 * There is no Global search API to fetch search results , that why i added column based search
