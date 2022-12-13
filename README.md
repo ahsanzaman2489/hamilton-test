@@ -39,6 +39,7 @@ Figure 5 ![](<public/Screenshot 2022-12-13 192824.jpg>)
 * cd your folder name `Eg : cd hamilton-test`
 * `npm install` if error please check `https://www.material-react-table.com/docs/getting-started/install` Install With Required Peer Dependencies
 * for development script please check below
+* if you want to use your own API keys change `projectroot/.env`
 
 ## Available Scripts
 
