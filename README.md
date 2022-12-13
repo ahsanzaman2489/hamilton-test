@@ -2,6 +2,44 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## key features of the project
+* Built with React 18 and Create react App
+* All data visualization is from server directly without state management
+* Used React Material Table for data visualization (https://www.material-react-table.com/docs/getting-started/install)
+* React Query used to query and call API on client
+* Column Filters are added Figure 1.1
+* Show/hide Column Filter Figure 1.2
+* Show/hide Columns Figure 1.3
+* Pagination Figure 1.4
+* Back functionality to previous url's with previous URL query Params Figure 2.5
+* Character Details with Name , description , image. public URLS Figure 3.6
+* Stories , Series , Comics , Events will be listed if available Figure 3.7 
+* Sorting ,Pagination , Filters are saved in URL query params to the get the data as per URL
+* Multi column sort is available you have to hold `SHIFT` key.
+* Fully responsive Figure 4 and 5
+   
+Figure 1![](public/Screenshot 2022-12-13 183034.jpg)
+
+Figure 2![](public/Screenshot 2022-12-13 183118.jpg)
+
+Figure 3![](public/Screenshot 2022-12-13 183201.jpg)
+
+Figure 4![](public/Screenshot 2022-12-13 192759.jpg)
+
+Figure 5![](public/Screenshot 2022-12-13 192824.jpg)
+
+## Limitations
+* There is no Global search API to fetch search results , that why i added column based search
+* In detail page List of Series , Comics , Stories and Events have limited data to show against character
+* There was no design provided so i focused more on functionality rather then design.
+* No test cases added because of limited time , i can add if i get more time
+
+## Setup
+* clone the repo `git clone https://github.com/ahsanzaman2489/hamilton-test.git` 
+* cd your folder name `Eg : cd hamilton-test`
+* `npm install` if error please check `https://www.material-react-table.com/docs/getting-started/install` Install With Required Peer Dependencies
+* for development script please check below
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -28,19 +66,3 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
