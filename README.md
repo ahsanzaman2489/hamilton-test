@@ -34,10 +34,11 @@ Figure 5 ![](<public/Screenshot 2022-12-13 192824.jpg>)
 * There is no Global search API to fetch search results , that why i added column based search
 * In detail page List of Series , Comics , Stories and Events have limited data to show against character , So i didnt call 4 new API's to get whole data , i just render the limited results from Character API with total count of respective list.
 * There was no design provided so i focused more on functionality rather then design.
-* No test cases added because of limited time , i can add if i get more time
+* No test cases added because of my limited time , i can add if i get more time
 * Search is very wierd , case and word sensitive.
 * Images dont have custom sizes they have predefined sizes , full width image can be less then 750px
 * Not much data in the Character API (Eg : images , details)
+* No cache applie due to my limited time , can be done if i get more time.
 
 ## Setup
 * clone the repo `git clone https://github.com/ahsanzaman2489/hamilton-test.git` 
