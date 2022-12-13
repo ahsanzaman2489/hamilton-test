@@ -18,6 +18,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * Stories , Series , Comics , Events will be listed if available Figure 3.7 
 * Sorting ,Pagination , Filters are saved in URL query params to the get the data as per URL
 * Multi column sort is available you have to hold `SHIFT` key.
+* Fully paginated data visualization
 * Fully responsive Figure 4 and 5
    
 Figure 1 ![](<public/Screenshot 2022-12-13 183034.jpg>)
