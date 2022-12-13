@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## key features of the project
 * Built with React 18 and Create react App
+* Typescript for static type checkings
+* Material UI used for Markup https://mui.com/material-ui/
 * All data visualization is from server directly without state management
 * Used React Material Table for data visualization (https://www.material-react-table.com/docs/getting-started/install)
 * React Query used to query and call API on client
